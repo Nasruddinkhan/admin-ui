@@ -1,0 +1,23 @@
+<!-- app.component.html -->
+
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Your App Name</span>
+</mat-toolbar>
+
+<mat-sidenav-container
+  style="height: calc(100vh - 100%); min-height: calc(100vh - 100px)"
+>
+  <mat-sidenav #sidenav mode="side">
+    <button mat-button>Home</button>
+    <button mat-button>About</button>
+    <button mat-button>Contact</button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Your main content goes here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

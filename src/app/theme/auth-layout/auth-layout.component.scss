@@ -1,0 +1,37 @@
+@import '../../../assets/styles/mixins';
+.auth-container {
+  height: 100%;
+  // padding-top: 10rem;
+  position: relative;
+  background: #312D2C;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+@include max-width(small) {
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    // padding:0;
+   
+  }
+}
+
+@include max-width(medium) {
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    // padding:0;
+  }
+}
+
+
+
+
+@include min-width(large) {
+  .auth-container {
+    display: flex;
+    // padding-top: 10rem;
+  }
+}

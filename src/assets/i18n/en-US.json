@@ -1,0 +1,23 @@
+{
+    "authlayout":{
+        "title":"Easily to manage your task with this system",
+        "subtitle":"A Task Management System (TMS) is a software application or platform designed to help individuals, teams, or organizations organize, track, and manage tasks and projects efficiently. The primary goal of a Task Management System is to streamline workflow, enhance collaboration, and improve productivity by providing a centralized platform for managing tasks and assignments. Here is a description of key features and aspects of a Task Management System"
+    },
+    "user": {
+        "profile": "profile",
+        "settings": "settings",
+        "logout": "logout"
+    },
+    "login":{
+        "title":" Welcome To Alinma Admin Portal",
+        "username":"User Name",
+        "password":"Password",
+        "placeholder":{
+        "username":"Please enter user name",
+        "password":"Please enter password"
+        },
+        "btn":{
+            "signIn":"Sign In"
+        }
+    }
+}

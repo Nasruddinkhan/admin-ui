@@ -1,0 +1,10 @@
+{
+    "authlayout":{
+        "title":"Easily to manage your task with this system"
+    },
+    "user": {
+        "profile": "profile",
+        "settings": "settings",
+        "logout": "logout"
+    }
+}

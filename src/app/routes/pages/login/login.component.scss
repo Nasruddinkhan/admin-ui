@@ -1,0 +1,54 @@
+@import "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/common";
+@import "../../../../assets/styles/variables";
+
+.cardContainer {
+ display: flex;
+ flex-direction: column;
+ background-color: $white;
+ width: 100%;
+ border-radius: 1rem;
+
+ &__card {
+  padding: 2rem;
+ }
+
+
+
+
+}
+
+
+ 
+
+ .cardContainer {
+ 
+
+  &__title {
+   display: flex;
+   justify-content: center;
+   padding-top: 3rem;
+   color: #1d252d;
+   font-size: 25px;
+   font-family: Ubuntu;
+   font-weight: 500;
+   line-height: 22px;
+   word-wrap: break-word;
+  }
+ }
+
+ ::ng-deep  .cardContainer {
+ 
+ }
+ ::ng-deep lib-task-input {
+    .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+        font-size: 32px!important;
+    }
+  
+ }
+
+.input-full-width {
+    width: 100%;
+}

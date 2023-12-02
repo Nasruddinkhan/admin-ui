@@ -1,0 +1,30 @@
+<section class="cardContainer">
+    <div class="cardContainer__title">
+        {{ "login.title" | translate }}
+    </div>
+    <div class="cardContainer__card">
+        <form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+            <mat-form-field class="input-full-width">
+                <mat-label>{{'login.username' | translate }}</mat-label>
+                <input type="text" matInput formControlName="username"
+                    [placeholder]="'login.placeholder.username' | translate">
+                    <mat-error
+                    *ngIf="isSubmitted && loginForm.get('username')?.hasError('required')">
+                User Nname is required
+                  </mat-error>
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+                <mat-label>{{'login.password' | translate }}</mat-label>
+                <input type="password" matInput formControlName="password"
+                    [placeholder]="'login.placeholder.password' | translate">
+                    <mat-error
+                    *ngIf="isSubmitted && loginForm.get('password')?.hasError('required')">
+                Password is required
+                  </mat-error>
+            </mat-form-field>
+            <button style="width: 100%;" mat-raised-button>
+                {{'login.btn.signIn' | translate }}
+            </button>
+        </form>
+    </div>
+</section>

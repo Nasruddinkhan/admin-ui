@@ -1,0 +1,12 @@
+<mat-toolbar  color="primary" class="admin-layout-toolbar admin-layout-fixed-header">
+    <button mat-icon-button class="admin-layout-toolbar-button"  *ngIf="showToggle"
+    (click)="toggleSidenav.emit()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span fxflex="" ng-reflect-fx-flex="" style="flex: 1 1 0%; box-sizing: border-box;"></span>
+
+    <button mat-icon-button  fxHide.lt-sm
+          (click)="toggleFullscreen()">
+    <mat-icon>fullscreen</mat-icon>
+  </button>
+  </mat-toolbar>
